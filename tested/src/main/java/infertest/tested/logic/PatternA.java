@@ -203,12 +203,6 @@ public class PatternA {
 		logicField2.returnStr().length(); // NPE check22
 	}
 
-	public static void main(String[] args) {
-
-		new PatternA().check23();
-
-	}
-
 	public void check23() {
 
 		List<String> list = new ArrayList<>();
@@ -272,28 +266,28 @@ public class PatternA {
 		bean2.getCode(); //
 	}
 
+	public static void main(String[] args) {
+
+		new PatternA().check30();
+
+	}
+
 	public void check30() {
 
 		Bean bean1 = getBeanOrNot();
 
-		if (bean1 == null) {
+		if (bean1 != null) {
 
 			Bean bean2 = getBeanOrNot();
 
 			bean2.getCode(); //
 
-		} else {
-
-			Bean bean2 = getBeanOrNot();
-
-			bean2.getCode();
 		}
-
 	}
 
 	public Bean getBeanOrNot() {
 
-		Random ran = new Random(1234);
+		Random ran = new Random();
 
 		return ran.nextInt(10) > 5 ? null : new Bean();
 	}
