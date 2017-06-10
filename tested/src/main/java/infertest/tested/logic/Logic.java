@@ -11,11 +11,10 @@ public class Logic {
 			DAO dao2 = new DAO();
 			dao2.getBeanOrNot().getCode();
 
-		} else {
-
-			DAO dao2 = new DAO();
-			dao2.getBeanOrNot().getCode();
 		}
+
+		DAO dao3 = new DAO();
+		dao3.getBeanOrNot().getCode();
 
 	}
 
