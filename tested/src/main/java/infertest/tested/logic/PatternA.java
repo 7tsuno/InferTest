@@ -3,6 +3,8 @@ package infertest.tested.logic;
 import java.util.Arrays;
 import java.util.List;
 
+import org.apache.commons.lang3.StringUtils;
+
 import infertest.tested.bean.Bean;
 
 /**
@@ -213,8 +215,27 @@ public class PatternA {
 		String b = null;
 
 		b.length(); // NPE check24-2
-		
-		a
+
+	}
+
+	public void check26() {
+
+		String a = null;
+
+		if (StringUtils.isBlank(a)) {
+			a.length();
+		}
+
+	}
+
+	public void check27() {
+
+		String a = null;
+
+		if (!StringUtils.isBlank(a)) {
+			a.length();
+		}
+
 	}
 
 }
