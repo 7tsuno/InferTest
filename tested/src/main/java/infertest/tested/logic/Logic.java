@@ -3,7 +3,7 @@ package infertest.tested.logic;
 import lombok.Data;
 
 @Data
-public class OtherLogic {
+public class Logic {
 
 	private boolean check;
 

@@ -3,13 +3,14 @@ package infertest.tested.logic;
 import java.util.Arrays;
 import java.util.List;
 
-import infertest.tested.bean.Bean;
+import infertest.other.bean.OtherBean;
+import infertest.other.logic.OtherLogic;
 
 /**
  * pattern A. <br>
  * Common null check pattern.
  */
-public class PatternA {
+public class PatternA2 {
 
 	public void check1() {
 
@@ -60,21 +61,21 @@ public class PatternA {
 
 	public void check5() {
 
-		String str = Logic.returnNullStatic();
+		String str = OtherLogic.returnNullStatic();
 		str.length(); // NPE check5
 
 	}
 
 	public void check6() {
 
-		Logic logic = new Logic();
+		OtherLogic logic = new OtherLogic();
 		String str = logic.returnNullInstance();
 		str.length(); // NPE check6
 	}
 
 	public void check7() {
 
-		Logic logic = new Logic();
+		OtherLogic logic = new OtherLogic();
 		logic.setCheck(false);
 		String str = logic.returnWithCheck();
 		str.length(); // NPE check7
@@ -82,7 +83,7 @@ public class PatternA {
 
 	public void check8() {
 
-		Logic logic = new Logic();
+		OtherLogic logic = new OtherLogic();
 		logic.setCheck(true);
 		String str = logic.returnWithCheck();
 		str.length();
@@ -115,7 +116,7 @@ public class PatternA {
 	public void check11() {
 
 		String str = null;
-		Logic logic = new Logic();
+		OtherLogic logic = new OtherLogic();
 
 		logic.returnLength(str);// NPE check11
 	}
@@ -123,7 +124,7 @@ public class PatternA {
 	public void check12() {
 
 		String str = null;
-		Logic logic = new Logic();
+		OtherLogic logic = new OtherLogic();
 		logic.setCheck(true);
 
 		logic.returnLengthWithCheck(str);
@@ -132,7 +133,7 @@ public class PatternA {
 	public void check13() {
 
 		String str = null;
-		Logic logic = new Logic();
+		OtherLogic logic = new OtherLogic();
 		logic.setCheck(false);
 
 		logic.returnLengthWithCheck(str); // NPE check13
@@ -160,19 +161,19 @@ public class PatternA {
 
 	}
 
-	public void check17(Bean bean) {
+	public void check17(OtherBean OtherBean) {
 
-		bean.getCode().length();
+		OtherBean.getCode().length();
 
 	}
 
-	public void check18(Bean bean) {
+	public void check18(OtherBean OtherBean) {
 
-		if (bean.getCode() == null) {
+		if (OtherBean.getCode() == null) {
 
 		}
 
-		bean.getCode().length();
+		OtherBean.getCode().length();
 
 	}
 
