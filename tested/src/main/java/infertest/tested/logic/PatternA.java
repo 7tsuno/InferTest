@@ -126,7 +126,7 @@ public class PatternA {
 		OtherLogic logic = new OtherLogic();
 		logic.setCheck(true);
 
-		logic.returnLengthWithCheck(str); // NPE check12
+		logic.returnLengthWithCheck(str);
 	}
 
 	public void check13() {
@@ -162,6 +162,12 @@ public class PatternA {
 
 	public void check17(Bean bean) {
 
+		bean.getCode().length();
+
+	}
+
+	public void check18(Bean bean) {
+
 		if (bean.getCode() == null) {
 
 		}
@@ -172,36 +178,24 @@ public class PatternA {
 
 	private InterfaceLogic logicField;
 
-	public void check18() {
+	public void check19() {
 		logicField.returnStr().length();
 	}
 
-	public void check19() {
+	public void check20() {
 		InterfaceLogic logic = new InterfaceLogicImpl();
-		logic.returnStr().length(); // NPE check19
+		logic.returnStr().length(); // NPE check20
 	}
 
-	public void check20() {
+	public void check21() {
 		InterfaceLogicImpl logic = new InterfaceLogicImpl();
-		logic.returnStr().length(); // NPE check20
+		logic.returnStr().length(); // NPE check21
 	}
 
 	private InterfaceLogicImpl logicField2;
 
-	public void check21() {
-		logicField2.returnStr().length(); // NPE check21
-	}
-
 	public void check22() {
-
-		String str = logicField.returnStr();
-
-		if (str == null) {
-
-		}
-
-		str.length();
-
+		logicField2.returnStr().length(); // NPE check22
 	}
 
 	public void check23() {
