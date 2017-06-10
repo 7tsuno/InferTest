@@ -4,7 +4,7 @@ import infertest.tested.bean.Bean;
 
 public class DAO {
 
-	public boolean a;
+	public static boolean a;
 
 	public Bean getBeanOrNot() {
 
