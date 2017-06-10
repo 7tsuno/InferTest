@@ -1,33 +1,22 @@
 package infertest.tested.logic;
 
-import lombok.Data;
-
-@Data
 public class Logic {
 
-	private boolean check;
+	public void test1() {
 
-	public static String returnNullStatic() {
-		return null;
-	}
+		DAO dao = new DAO();
 
-	public String returnNullInstance() {
-		return null;
-	}
+		if (dao.getBeanOrNot() == null) {
 
-	public String returnWithCheck() {
+			DAO dao2 = new DAO();
+			dao2.getBeanOrNot().getCode();
 
-		return check ? "abc" : null;
+		} else {
 
-	}
+			DAO dao2 = new DAO();
+			dao2.getBeanOrNot().getCode();
+		}
 
-	public int returnLength(String str) {
-		return str.length();
-	}
-
-	public int returnLengthWithCheck(String str) {
-
-		return check ? 0 : str.length();
 	}
 
 }
