@@ -14,7 +14,7 @@ public class PatternA {
 	public void check1() {
 
 		String str = null;
-		str.length(); // NPE
+		str.length(); // NPE check1
 
 	}
 
@@ -28,14 +28,14 @@ public class PatternA {
 			str = null;
 		}
 
-		str.length(); // NPE
+		str.length(); // NPE check2
 
 	}
 
 	public void check3() {
 
 		String str = returnNull();
-		str.length(); // NPE
+		str.length(); // NPE check3
 
 	}
 
@@ -46,7 +46,7 @@ public class PatternA {
 	public void check4() {
 
 		String str = returnNull(1);
-		str.length(); // NPE
+		str.length(); // NPE check4
 
 	}
 
@@ -61,7 +61,7 @@ public class PatternA {
 	public void check5() {
 
 		String str = OtherLogic.returnNullStatic();
-		str.length(); // NPE
+		str.length(); // NPE check5
 
 	}
 
@@ -69,7 +69,7 @@ public class PatternA {
 
 		OtherLogic logic = new OtherLogic();
 		String str = logic.returnNullInstance();
-		str.length(); // NPE
+		str.length(); // NPE check6
 	}
 
 	public void check7() {
@@ -77,7 +77,7 @@ public class PatternA {
 		OtherLogic logic = new OtherLogic();
 		logic.setCheck(false);
 		String str = logic.returnWithCheck();
-		str.length(); // NPE
+		str.length(); // NPE check7
 	}
 
 	public void check8() {
@@ -105,7 +105,7 @@ public class PatternA {
 
 		String str = null;
 
-		returnLength(str);// NPE
+		returnLength(str);// NPE check10
 	}
 
 	private int returnLength(String str) {
@@ -117,7 +117,7 @@ public class PatternA {
 		String str = null;
 		OtherLogic logic = new OtherLogic();
 
-		logic.returnLength(str);// NPE
+		logic.returnLength(str);// NPE check11
 	}
 
 	public void check12() {
@@ -126,7 +126,7 @@ public class PatternA {
 		OtherLogic logic = new OtherLogic();
 		logic.setCheck(true);
 
-		logic.returnLengthWithCheck(str); // NPE
+		logic.returnLengthWithCheck(str); // NPE check12
 	}
 
 	public void check13() {
@@ -135,7 +135,7 @@ public class PatternA {
 		OtherLogic logic = new OtherLogic();
 		logic.setCheck(false);
 
-		logic.returnLengthWithCheck(str); // NPE
+		logic.returnLengthWithCheck(str); // NPE check13
 	}
 
 	public void check14(String str) {
@@ -145,7 +145,7 @@ public class PatternA {
 	public void check15(String str) {
 
 		if (str == null) {
-			str.length(); // NPE
+			str.length(); // NPE check15
 		}
 
 	}
@@ -178,18 +178,18 @@ public class PatternA {
 
 	public void check19() {
 		InterfaceLogic logic = new InterfaceLogicImpl();
-		logic.returnStr().length(); // NPE
+		logic.returnStr().length(); // NPE check19
 	}
 
 	public void check20() {
 		InterfaceLogicImpl logic = new InterfaceLogicImpl();
-		logic.returnStr().length(); // NPE
+		logic.returnStr().length(); // NPE check20
 	}
 
 	private InterfaceLogicImpl logicField2;
 
 	public void check21() {
-		logicField2.returnStr().length(); // NPE
+		logicField2.returnStr().length(); // NPE check21
 	}
 
 	public void check22() {
@@ -207,18 +207,18 @@ public class PatternA {
 	public void check23() {
 
 		List<String> list = Arrays.asList(null, null);
-		list.get(0).length(); // NPE
+		list.get(0).length(); // NPE check23
 	}
 
 	public void check24() {
 
 		String a = null;
 
-		a.length();
+		a.length(); // NPE check24-1
 
 		String b = null;
 
-		b.length();
+		b.length(); // NPE check24-2
 
 	}
 
