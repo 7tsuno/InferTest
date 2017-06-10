@@ -278,13 +278,13 @@ public class PatternA {
 
 		if (bean1 == null) {
 
-			Bean bean2 = getBeanOrNot2();
+			Bean bean2 = getBeanOrNot();
 
 			bean2.getCode(); //
 
 		} else {
 
-			Bean bean2 = getBeanOrNot3();
+			Bean bean2 = getBeanOrNot();
 
 			bean2.getCode();
 		}
@@ -293,23 +293,8 @@ public class PatternA {
 
 	public Bean getBeanOrNot() {
 
-		Random ran = new Random();
+		Random ran = new Random(1234);
 
 		return ran.nextInt(10) > 5 ? null : new Bean();
 	}
-
-	public Bean getBeanOrNot2() {
-
-		Random ran = new Random();
-
-		return ran.nextInt(50) > 12 ? null : new Bean();
-	}
-
-	public Bean getBeanOrNot3() {
-
-		Random ran = new Random();
-
-		return ran.nextInt(55) > 12 ? null : new Bean();
-	}
-
 }
