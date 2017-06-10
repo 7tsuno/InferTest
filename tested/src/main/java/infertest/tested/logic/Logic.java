@@ -4,9 +4,14 @@ public class Logic {
 
 	public void test1() {
 
-		DAO dao2 = new DAO();
+		DAO dao = new DAO();
 
-		dao2.getBeanOrNot().getCode();
+		if (dao.getBeanOrNot() == null) {
+
+			DAO dao2 = new DAO();
+
+			dao2.getBeanOrNot().getCode();
+		}
 
 		DAO dao3 = new DAO();
 
