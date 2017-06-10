@@ -285,6 +285,27 @@ public class PatternA {
 		}
 	}
 
+	private DAO dao;
+
+	public void check31() {
+
+		Bean bean1 = dao.getBeanOrNot();
+
+		if (bean1 == null) {
+
+			Bean bean2 = dao.getBeanOrNot();
+
+			bean2.getCode(); //
+
+		} else {
+
+			Bean bean2 = dao.getBeanOrNot();
+
+			bean2.getCode(); //
+
+		}
+	}
+
 	public Bean getBeanOrNot() {
 
 		Random ran = new Random();
