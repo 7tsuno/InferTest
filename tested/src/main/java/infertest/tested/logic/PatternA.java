@@ -213,7 +213,8 @@ public class PatternA {
 		String b = null;
 
 		b.length(); // NPE check24-2
-
+		
+		a
 	}
 
 }
