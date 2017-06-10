@@ -7,6 +7,7 @@ import java.util.List;
 import org.apache.commons.lang3.StringUtils;
 
 import infertest.tested.bean.Bean;
+import infertest.tested.bean.Fuga;
 
 /**
  * pattern A. <br>
@@ -244,6 +245,18 @@ public class PatternA {
 		if (!StringUtils.isBlank(a)) {
 			a.length();
 		}
+
+	}
+
+	public void check28() {
+
+		Fuga f = new Fuga();
+
+		f.add("a");
+		f.add(null);
+		
+		f.get(0);
+		f.get(1);
 
 	}
 
