@@ -306,6 +306,33 @@ public class PatternA {
 		}
 	}
 
+	public void check32() {
+
+		String str = null;
+		Logic logic = new Logic();
+		logic.setCheck(true);
+
+		logic.returnLengthWithCheck(str);
+
+		String str2 = null;
+		logic.setCheck(false);
+
+		logic.returnLengthWithCheck(str2); // NPE check32
+	}
+
+	public void check33() {
+
+		Logic logic = new Logic();
+		logic.setCheck(true);
+		String str = logic.returnWithCheck();
+		str.length();
+
+		logic.setCheck(false);
+		String str2 = logic.returnWithCheck();
+		str2.length(); // NPE check33
+
+	}
+
 	public Bean getBeanOrNot() {
 
 		Random ran = new Random();
