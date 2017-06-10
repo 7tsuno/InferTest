@@ -3,6 +3,7 @@ package infertest.tested.logic;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Random;
 
 import org.apache.commons.lang3.StringUtils;
 
@@ -254,10 +255,47 @@ public class PatternA {
 
 		f.add("a");
 		f.add(null);
-		
+
 		f.get(0).length();
 		f.get(1).length();
 
+	}
+
+	public void check29() {
+
+		Bean bean1 = getBeanOrNot();
+
+		bean1.getCode();
+
+		Bean bean2 = getBeanOrNot();
+
+		bean2.getCode();
+	}
+
+	public void check30() {
+
+		Bean bean1 = getBeanOrNot();
+
+		if (bean1 == null) {
+
+			Bean bean2 = getBeanOrNot();
+
+			bean2.getCode();
+
+		} else {
+
+			Bean bean2 = getBeanOrNot();
+
+			bean2.getCode();
+		}
+
+	}
+
+	public Bean getBeanOrNot() {
+
+		Random ran = new Random();
+
+		return ran.nextInt(10) > 5 ? null : new Bean();
 	}
 
 }
