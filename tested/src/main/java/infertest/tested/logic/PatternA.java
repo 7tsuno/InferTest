@@ -1,5 +1,6 @@
 package infertest.tested.logic;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -200,10 +201,18 @@ public class PatternA {
 		logicField2.returnStr().length(); // NPE check22
 	}
 
+	public static void main(String[] args) {
+
+		new PatternA().check23();
+
+	}
+
 	public void check23() {
 
-		List<String> list = Arrays.asList(null, null);
-		list.get(0).length(); // NPE check23
+		List<String> list = new ArrayList<>();
+		list.add(null);
+		list.get(0);
+
 	}
 
 	public void check24() {
