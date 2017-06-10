@@ -6,13 +6,7 @@ public class Logic {
 
 		DAO dao = new DAO();
 
-		if (dao.getBeanOrNot() == null) {
-
-			DAO dao2 = new DAO();
-
-			dao2.getBeanOrNot().getCode();
-		} else {
-
+		if (dao.getBeanOrNot() != null) {
 			DAO dao3 = new DAO();
 
 			dao3.getBeanOrNot().getCode();
