@@ -1,9 +1,7 @@
 package infertest.tested.logic;
 
-import infertest.other.bean.OtherBean;
-import infertest.other.bean.OtherLombokedBean;
-import infertest.tested.bean.MyBean;
-import infertest.tested.bean.MyLombokedBean;
+import infertest.tested.bean.Bean;
+import infertest.tested.bean.LombokedBean;
 
 /**
  * pattern B. <br>
@@ -18,7 +16,7 @@ public class PatternB {
 	 */
 	public void check1() {
 
-		MyBean bean = new MyBean();
+		Bean bean = new Bean();
 		bean.setCode("abc");
 		bean.getCode().length();
 
@@ -31,7 +29,7 @@ public class PatternB {
 	 */
 	public void check2() {
 
-		MyBean bean = new MyBean();
+		Bean bean = new Bean();
 		bean.getCode().length();
 
 	}
@@ -43,7 +41,7 @@ public class PatternB {
 	 */
 	public void check3() {
 
-		MyLombokedBean bean = new MyLombokedBean();
+		LombokedBean bean = new LombokedBean();
 		bean.setCode("abc");
 		bean.getCode().length();
 
@@ -56,57 +54,7 @@ public class PatternB {
 	 */
 	public void check4() {
 
-		MyLombokedBean bean = new MyLombokedBean();
-		bean.getCode().length();
-
-	}
-
-	/**
-	 * B-5. <br>
-	 * Reference to the property set by setter. <br>
-	 * Target : Bean of Other project(Not Lomboked)
-	 */
-	public void check5() {
-
-		OtherBean bean = new OtherBean();
-		bean.setCode("abc");
-		bean.getCode().length();
-
-	}
-
-	/**
-	 * B-6. <br>
-	 * Reference to the property not set by setter. <br>
-	 * Target : Bean of Other project(Not Lomboked)
-	 */
-	public void check6() {
-
-		OtherBean bean = new OtherBean();
-		bean.getCode().length();
-
-	}
-
-	/**
-	 * B-7. <br>
-	 * Reference to the property set by setter. <br>
-	 * Target : Bean of Other project(Lomboked)
-	 */
-	public void check7() {
-
-		OtherLombokedBean bean = new OtherLombokedBean();
-		bean.setCode("abc");
-		bean.getCode().length();
-
-	}
-
-	/**
-	 * B-8. <br>
-	 * Reference to the property not set by setter. <br>
-	 * Target : Bean of Other project(Lomboked)
-	 */
-	public void check8() {
-
-		OtherLombokedBean bean = new OtherLombokedBean();
+		LombokedBean bean = new LombokedBean();
 		bean.getCode().length();
 
 	}

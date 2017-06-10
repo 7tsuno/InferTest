@@ -1,7 +1,9 @@
 package infertest.tested.logic;
 
-import infertest.other.logic.OtherLogic;
-import infertest.tested.bean.MyBean;
+import java.util.Arrays;
+import java.util.List;
+
+import infertest.tested.bean.Bean;
 
 /**
  * pattern A. <br>
@@ -158,7 +160,7 @@ public class PatternA {
 
 	}
 
-	public void check17(MyBean bean) {
+	public void check17(Bean bean) {
 
 		if (bean.getCode() == null) {
 
@@ -176,18 +178,18 @@ public class PatternA {
 
 	public void check19() {
 		InterfaceLogic logic = new InterfaceLogicImpl();
-		logic.returnStr().length();
+		logic.returnStr().length(); // NPE
 	}
 
 	public void check20() {
 		InterfaceLogicImpl logic = new InterfaceLogicImpl();
-		logic.returnStr().length();
+		logic.returnStr().length(); // NPE
 	}
 
-	private InterfaceLogic logicField2 = new InterfaceLogicImpl();
+	private InterfaceLogicImpl logicField2;
 
 	public void check21() {
-		logicField2.returnStr().length();
+		logicField2.returnStr().length(); // NPE
 	}
 
 	public void check22() {
@@ -199,6 +201,24 @@ public class PatternA {
 		}
 
 		str.length();
+
+	}
+
+	public void check23() {
+
+		List<String> list = Arrays.asList(null, null);
+		list.get(0).length(); // NPE
+	}
+
+	public void check24() {
+
+		String a = null;
+
+		a.length();
+
+		String b = null;
+
+		b.length();
 
 	}
 
