@@ -212,7 +212,7 @@ public class PatternA {
 
 		List<String> list = new ArrayList<>();
 		list.add(null);
-		list.get(0);
+		list.get(0).length();
 
 	}
 
@@ -255,8 +255,8 @@ public class PatternA {
 		f.add("a");
 		f.add(null);
 		
-		f.get(0);
-		f.get(1);
+		f.get(0).length();
+		f.get(1).length();
 
 	}
 
