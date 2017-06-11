@@ -3,8 +3,8 @@ package infertest.tested.bean;
 public class Bean {
 
 	private String code = null;
-	private String code2;
-	private String code3;
+	private String code2 = null;
+	private String code3 = null;
 
 	public String getCode2() {
 		return code2;

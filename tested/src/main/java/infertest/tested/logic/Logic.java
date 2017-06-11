@@ -10,15 +10,13 @@ public class Logic {
 
 		Bean bean = new Bean();
 
-		if (dao.getBeanOrNot("aaa") == null) {
+		test(bean);
 
-			dao.getBeanOrNot("aaa").getCode();
+	}
 
-		} else {
-
-			dao.getBeanOrNot("aaa").getCode();
-		}
-
+	private void test(Bean bean) {
+		bean.getCode().length();
+		bean.getCode2().length();
 	}
 
 }
