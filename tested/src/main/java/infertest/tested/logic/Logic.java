@@ -6,6 +6,10 @@ public class Logic {
 
 	private DAO dao;
 
+	public static void main(String[] args) {
+		new Logic().testCall();
+	}
+
 	public void testCall() {
 
 		Bean bean = new Bean();
