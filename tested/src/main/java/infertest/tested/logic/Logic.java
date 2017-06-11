@@ -2,15 +2,15 @@ package infertest.tested.logic;
 
 public class Logic {
 
-	public static void main(String[] args) {
-		new Logic().test1();
-	}
+	private DAO dao;
 
 	public void test1() {
 
-		DAO dao = new DAO();
-
 		if (dao.getBeanOrNot("aaa") != null) {
+
+			dao.getBeanOrNot("bbb").getCode();
+
+		} else {
 
 			dao.getBeanOrNot("bbb").getCode();
 
