@@ -13,6 +13,10 @@ public class DAO {
 		return r.nextInt(50) > 1 + i ? null : new Bean();
 	}
 
+	public Bean getBeanOrNot2() {
+		return i == 3 ? null : new Bean();
+	}
+
 	public int getI() {
 		return i;
 	}

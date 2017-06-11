@@ -7,11 +7,11 @@ public class Logic {
 		DAO dao = new DAO();
 		dao.setI(2);
 
-		if (dao.getBeanOrNot() != null) {
+		if (dao.getBeanOrNot2() != null) {
 
 			DAO dao3 = new DAO();
 			dao.setI(3);
-			dao3.getBeanOrNot().getCode();
+			dao3.getBeanOrNot2().getCode();
 		}
 
 	}
