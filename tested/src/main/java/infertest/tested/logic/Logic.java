@@ -12,7 +12,7 @@ public class Logic {
 
 		if (dao.getBeanOrNot("aaa") != null) {
 
-			dao.getBeanOrNot("bbbbb").getCode().length();
+			dao.getBeanOrNot("bbb").getCode();
 
 		}
 
