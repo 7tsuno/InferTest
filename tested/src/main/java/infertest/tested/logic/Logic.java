@@ -1,5 +1,7 @@
 package infertest.tested.logic;
 
+import java.util.Random;
+
 import infertest.tested.bean.Bean;
 
 public class Logic {
@@ -9,6 +11,8 @@ public class Logic {
 	public void testCall() {
 
 		Bean bean = new Bean();
+		bean.setCode(gs());
+		bean.setCode2(gs());
 
 		test(bean);
 		test2(bean);
@@ -25,4 +29,8 @@ public class Logic {
 		bean.getCode2().length();
 	}
 
+	private String gs() {
+		Random r = new Random();
+		return r.nextInt(50) > 1 ? null : "hoge";
+	}
 }
