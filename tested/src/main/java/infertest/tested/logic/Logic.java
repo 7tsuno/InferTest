@@ -12,11 +12,11 @@ public class Logic {
 
 		if (dao.getBeanOrNot("aaa") == null) {
 
-			dao.getBeanOrNot("aaa").getCode().length();
+			dao.getBeanOrNot("aaa").getCode();
 
 		} else {
 
-			dao.getBeanOrNot("aaa").getCode().length();
+			dao.getBeanOrNot("aaa").getCode();
 		}
 
 	}
