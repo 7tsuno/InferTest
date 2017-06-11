@@ -10,6 +10,7 @@ public class Logic {
 	public void testCall() {
 
 		Bean bean = new Bean();
+		bean.setCode(null);
 
 		test1(bean, null);
 
