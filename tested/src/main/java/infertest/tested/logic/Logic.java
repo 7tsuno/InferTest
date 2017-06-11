@@ -6,19 +6,19 @@ public class Logic {
 
 	private DAO dao;
 
-	public void test1() {
+	public void testCall() {
 
-		Bean bean = dao.findBeanOrNot();
+		Bean bean = new Bean();
 
-		if (bean != null) {
+		test1(bean);
 
-			dao.findBeanOrNot().getCode();
+	}
 
-		} else {
+	public void test1(Bean bean) {
 
-			dao.findBeanOrNot().getCode();
+		bean.getCode().length();
 
-		}
+		bean.getCode2().length();
 
 	}
 
