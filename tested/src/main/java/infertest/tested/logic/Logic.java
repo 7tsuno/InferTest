@@ -10,11 +10,11 @@ public class Logic {
 
 		Bean bean = new Bean();
 
-		test1(null);
+		test1(bean, null);
 
 	}
 
-	private void test1(String str) {
+	private void test1(Bean bean, String str) {
 
 		str.length();
 	}
