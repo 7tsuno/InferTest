@@ -342,4 +342,17 @@ public class PatternA {
 
 		return ran.nextInt(10) > 5 ? null : new Bean();
 	}
+
+	public void check34() {
+
+		Bean bean = new Bean();
+		bean.setCode("aaa");
+		if (bean.getCode() != null) {
+
+			Bean bean2 = new Bean();
+			bean2.getCode().length();
+
+		}
+
+	}
 }
