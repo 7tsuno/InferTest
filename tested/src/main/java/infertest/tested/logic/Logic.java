@@ -21,11 +21,9 @@ public class Logic {
 
 	private void test2(Bean bean) {
 		bean.getCode().length();
-		bean.getCode2().length();
 	}
 
 	private void test(Bean bean) {
-		bean.getCode().length();
 		bean.getCode2().length();
 	}
 
