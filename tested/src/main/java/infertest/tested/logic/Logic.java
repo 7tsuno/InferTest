@@ -33,7 +33,7 @@ public class Logic {
 	}
 
 	public void test1(Bean bean, String str) {
-		bean.getCode().length();
+		dao.eee(bean);
 	}
 
 }
