@@ -9,11 +9,12 @@ public class Logic {
 	public void test1() {
 
 		DAO dao = new DAO();
-		dao.setI(2);
 
-		DAO dao3 = new DAO();
-		dao3.setI(3);
-		dao3.getBeanOrNot2().getCode();
+		if (dao.getBeanOrNot("aaa") != null) {
+
+			dao.getBeanOrNot("bbbbb").getCode().length();
+
+		}
 
 	}
 
