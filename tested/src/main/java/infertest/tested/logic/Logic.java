@@ -8,15 +8,15 @@ public class Logic {
 
 	public void test1() {
 
-		Bean bean = dao.getBeanOrNot("bbb");
+		Bean bean = dao.getBeanOrNot();
 
 		if (bean != null) {
 
-			dao.getBeanOrNot("bbb").getCode();
+			dao.getBeanOrNot().getCode();
 
 		} else {
 
-			dao.getBeanOrNot("bbb").getCode();
+			dao.getBeanOrNot().getCode();
 
 		}
 

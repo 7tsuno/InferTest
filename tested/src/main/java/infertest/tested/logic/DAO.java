@@ -11,5 +11,10 @@ public class DAO implements DAOI {
 		Random r = new Random();
 		return r.nextInt(50) > s.length() ? null : new Bean();
 	}
+	public Bean getBeanOrNot() {
+
+		Random r = new Random();
+		return r.nextInt(50) > "bbb".length() ? null : new Bean();
+	}
 
 }
