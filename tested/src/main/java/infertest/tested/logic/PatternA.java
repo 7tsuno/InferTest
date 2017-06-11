@@ -327,9 +327,11 @@ public class PatternA {
 		String str = logic.returnWithCheck();
 		str.length();
 
-		logic.setCheck(false);
-		String str2 = logic.returnWithCheck();
-		str2.length(); // NPE check33
+		if (str != null) {
+			logic.setCheck(false);
+			String str2 = logic.returnWithCheck();
+			str2.length(); // NPE check33
+		}
 
 	}
 
