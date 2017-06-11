@@ -8,9 +8,7 @@ public class Logic {
 
 	public void test1() {
 
-		Bean bean = dao.getBeanOrNot("aaa");
-
-		bean.getCode();
+		Bean bean = dao.getBeanOrNot("bbb");
 
 		if (bean != null) {
 
