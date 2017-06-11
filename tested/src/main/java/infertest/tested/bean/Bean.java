@@ -29,4 +29,10 @@ public class Bean {
 	public void setCode(String code) {
 		this.code = code;
 	}
+
+	public Bean() {
+
+		code = null;
+
+	}
 }
