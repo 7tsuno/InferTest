@@ -19,8 +19,12 @@ public class Logic {
 
 		mao.setBean(bean2);
 
-		mao.getBean().getCode();
+		test3(mao.getBean());
 
+	}
+
+	private void test3(Bean bean) {
+		bean.getCode();
 	}
 
 	private Bean test2(String string) {
