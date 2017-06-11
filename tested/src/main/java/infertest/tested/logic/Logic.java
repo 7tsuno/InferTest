@@ -18,7 +18,7 @@ public class Logic {
 
 	}
 
-	public void test1(Bean bean) {
+	private void test1(Bean bean) {
 
 		bean.getCode().length();
 
