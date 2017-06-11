@@ -13,6 +13,7 @@ public class Logic {
 	public void testCall() {
 
 		Bean bean = new Bean();
+		bean.getCode().length();
 
 		test1(bean);
 
