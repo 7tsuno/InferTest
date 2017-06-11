@@ -10,9 +10,6 @@ public class Logic {
 
 		if (dao.getBeanOrNot() != null) {
 
-			Bean bean = new Bean();
-			bean.getCode().length();
-
 			DAO dao3 = new DAO();
 			dao3.getBeanOrNot().getCode();
 		}
