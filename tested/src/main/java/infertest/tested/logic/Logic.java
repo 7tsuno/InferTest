@@ -20,11 +20,6 @@ public class Logic {
 
 		if ("aaa".equals(bean.getCode())) {
 
-		} else {
-
-			String s = null;
-			s.length();
-
 		}
 
 	}
