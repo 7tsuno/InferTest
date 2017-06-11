@@ -10,12 +10,12 @@ import infertest.tested.bean.Bean;
 public class DAO implements DAOI {
 
 	public Bean getBeanOrNot(String s) {
-		return extracted();
+		return (Bean) extracted();
 	}
 
-	private Bean extracted() {
+	private Object extracted() {
 		Random r = new Random();
-		return r.nextInt(50) > 1 ? null : new Bean();
+		return r.nextInt(50) > 1 ? null : new Object();
 	}
 
 	public Bean getBeanOrNot2(String s) {
