@@ -17,6 +17,8 @@ public class Logic {
 	public void test1(Bean bean, String str) {
 
 		System.out.println(bean.getCode().length());
+
+		str.length();
 	}
 
 }
