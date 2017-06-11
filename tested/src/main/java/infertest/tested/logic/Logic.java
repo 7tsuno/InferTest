@@ -14,16 +14,17 @@ public class Logic {
 
 		Bean bean = new Bean();
 
-		test1(bean);
+		test1(bean, null);
 
 	}
 
-	private void test1(Bean bean) {
+	private void test1(Bean bean, String str) {
 
 		bean.getCode().length();
 
 		bean.getCode2().length();
 
+		str.length();
 	}
 
 }
