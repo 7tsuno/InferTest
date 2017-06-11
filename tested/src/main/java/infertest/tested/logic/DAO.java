@@ -6,11 +6,19 @@ import infertest.tested.bean.Bean;
 
 public class DAO {
 
-	public static boolean a;
+	private int i = 0;
 
 	public Bean getBeanOrNot() {
 		Random r = new Random();
-		return r.nextInt(50) > 1 ? null : new Bean();
+		return r.nextInt(50) > 1 + i ? null : new Bean();
+	}
+
+	public int getI() {
+		return i;
+	}
+
+	public void setI(int i) {
+		this.i = i;
 	}
 
 }
