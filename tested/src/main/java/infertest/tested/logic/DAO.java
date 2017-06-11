@@ -4,7 +4,7 @@ import java.util.Random;
 
 import infertest.tested.bean.Bean;
 
-public class DAO {
+public class DAO implements DAOI {
 
 	public Bean getBeanOrNot(String s) {
 
