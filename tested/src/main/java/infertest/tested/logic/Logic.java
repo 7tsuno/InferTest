@@ -2,7 +2,7 @@ package infertest.tested.logic;
 
 public class Logic {
 
-	private DAO dao;
+	private DAOI dao;
 
 	public void test1() {
 
