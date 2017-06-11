@@ -11,7 +11,13 @@ public class Logic {
 		Bean bean = new Bean();
 
 		test(bean);
+		test2(bean);
 
+	}
+
+	private void test2(Bean bean) {
+		bean.getCode().length();
+		bean.getCode2().length();
 	}
 
 	private void test(Bean bean) {
