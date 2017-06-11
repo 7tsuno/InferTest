@@ -2,7 +2,7 @@ package infertest.tested.bean;
 
 public class Bean {
 
-	private String code = null;
+	private String code;
 	private String code2;
 	private String code3;
 
