@@ -21,8 +21,8 @@ public class Logic {
 
 	}
 
-	public int returnLength(String str) {
-		return str.length();
+	public void returnLength(String str) {
+		str.length();
 	}
 
 	public int returnLengthWithCheck(String str) {
