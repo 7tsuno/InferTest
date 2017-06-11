@@ -355,4 +355,14 @@ public class PatternA {
 		}
 
 	}
+
+	public void check35() {
+
+		String str = null;
+		a(str);
+	}
+
+	public void a(String s) {
+		s.length();
+	}
 }
