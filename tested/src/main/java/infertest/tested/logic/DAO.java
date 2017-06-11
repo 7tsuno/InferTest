@@ -1,29 +1,22 @@
 package infertest.tested.logic;
 
+import java.util.Optional;
 import java.util.Random;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import infertest.tested.bean.Bean;
 
 public class DAO implements DAOI {
 
 	public Bean getBeanOrNot(String s) {
+		return randomReturn(new Bean(), s);
+	}
 
+	public <T> T randomReturn(T obj, Object... ojs) {
 		Random r = new Random();
-		return r.nextInt(50) > s.length() ? null : new Bean();
-	}
-
-	public Bean getBeanOrNot() {
-
-		Random r = new Random();
-		return r.nextInt(50) > "bbb".length() ? null : new Bean();
-	}
-
-	public void eee(Bean bean) {
-		bob(bean.getCode());
-	}
-
-	private void bob(String code) {
-		code.length();
+		Long collect = Stream.of(ojs).map(Object::hashCode).collect(Collectors.counting());
+		return r.nextInt(50) > Optional.ofNullable(collect).orElse(Long.valueOf("10")).intValue() ? null : obj;
 	}
 
 }
