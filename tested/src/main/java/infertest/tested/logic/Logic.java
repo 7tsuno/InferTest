@@ -1,6 +1,7 @@
 package infertest.tested.logic;
 
 import infertest.tested.bean.Bean;
+import infertest.tested.bean.MAO;
 
 public class Logic {
 
@@ -14,7 +15,11 @@ public class Logic {
 
 		Bean bean2 = test2("str");
 
-		bean2.getCode();
+		MAO mao = new MAO();
+
+		mao.setBean(bean2);
+
+		mao.getBean().getCode();
 
 	}
 
