@@ -111,16 +111,16 @@ public class Logic {
 
         Bean2 bean = new Bean2();
         bean.setCode3("aaa");
-        bean.setCode2(ns.getString());
-        bean.setCode(ns.getString());
+        bean.setCode2(ns.getString("a"));
+        bean.setCode(ns.getString("b"));
 
         bean.getCode().length();
         bean.getCode2().length();
 
-        String a = ns.getString();
+        String a = ns.getString("c");
         a.length();
 
-        String b = ns.getString();
+        String b = ns.getString("d");
         b.length();
 
         method(bean);
