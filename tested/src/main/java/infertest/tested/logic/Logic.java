@@ -1,5 +1,8 @@
 package infertest.tested.logic;
 
+import java.util.Arrays;
+import java.util.List;
+
 import infertest.tested.bean.Bean;
 import infertest.tested.bean.Bean2;
 
@@ -82,6 +85,18 @@ public class Logic {
     public void test10() {
 
         iLogic.find("abc").getCode();
+        iLogic.find("abc").getCode();
+        iLogic.find("abc").getCode();
+        iLogic.find("abc").getCode();
+        iLogic.find("abc").getCode();
+        iLogic.find("abc").getCode();
+
+    }
+
+    public void test11() {
+
+        List<String> list = Arrays.asList(null);
+        list.get(0).length();
 
     }
 
