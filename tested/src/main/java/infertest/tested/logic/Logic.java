@@ -61,10 +61,6 @@ public class Logic {
         other.method(1, null); // NPE 7-2
     }
 
-    public static void main(String[] args) {
-        new Logic().test8();
-    }
-
     public void test8() {
 
         other.get("aaa").getCode(); // NPE 8-1
@@ -122,9 +118,14 @@ public class Logic {
 
     }
 
+    public static void main(String[] args) {
+        new Logic().test14();
+    }
+
     public void test14() {
 
         Bean bean = new Bean();
+        DAO dao = new DAO();
         bean.setCode(dao.getOrNot("aaa"));
         b(bean);
 
