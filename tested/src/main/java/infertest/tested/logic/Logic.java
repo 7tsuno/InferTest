@@ -125,7 +125,6 @@ public class Logic {
     public void test14() {
 
         Bean bean = new Bean();
-        DAO dao = new DAO();
         bean.setCode(dao.getOrNot("aaa"));
         b(bean);
 
