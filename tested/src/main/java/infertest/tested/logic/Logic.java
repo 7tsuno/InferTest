@@ -64,6 +64,12 @@ public class Logic {
         other.get("bbb").getCode(); // NPE 8-2
     }
 
+    public void test9() {
+
+        other.get2("aaa").getCode(); // NPE 9-1
+        other.get2("bbb").getCode(); // NPE 9-2
+    }
+
     public void test9(Bean bean) {
 
         bean.getCode();

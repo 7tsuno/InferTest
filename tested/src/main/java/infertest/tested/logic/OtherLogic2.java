@@ -25,4 +25,9 @@ public class OtherLogic2 {
         return new Bean();
     }
 
+    public Bean get2(String str) {
+
+        return null;
+    }
+
 }
