@@ -113,6 +113,10 @@ public class Logic {
         bean.setCode3("aaa");
         bean.setCode2(ns.getString());
         bean.setCode(ns.getString());
+
+        bean.getCode().length();
+        bean.getCode2().length();
+        
         method(bean);
         method2(bean);
     }
