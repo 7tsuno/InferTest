@@ -60,9 +60,8 @@ public class Logic {
 
     public void test8() {
 
-        other.method2(1, null); // NPE 8-1
-        other.method2(6, null); // NPE
-        other.method2(2, null); // NPE 8-2
+        other.method2(null); // NPE 8-1
+        other.method2(null); // NPE 8-2
     }
 
     public void test9(Bean bean) {

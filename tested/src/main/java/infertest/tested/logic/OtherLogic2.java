@@ -15,7 +15,7 @@ public class OtherLogic2 {
         }
     }
 
-    public void method2(int i, String str) {
+    public void method2(String str) {
 
         if (new Random().nextInt(5) > 1) {
             str.length();
