@@ -20,7 +20,7 @@ public class DAO implements DAOI {
 
     public String getOrNot(String s) {
         Random r = new Random();
-        return r.nextInt(50) > 1 ? null : new String("jge");
+        return r.nextInt(50) > 1 ? null : "abc";
     }
 
     public Bean getBeanOrNot2(String s) {
