@@ -107,7 +107,6 @@ public class Logic {
     public void test12() {
 
         Bean bean = new Bean();
-        bean.setCode3("abc");
 
         method(bean);
 
