@@ -118,7 +118,11 @@ public class Logic {
 
         MAO mao = new MAO();
         mao.setBean(dao.getBeanOrNot("aaa"));
-        mao.getBean().getCode();
+        a(mao);
 
+    }
+
+    private void a(MAO mao) {
+        mao.getBean().getCode();
     }
 }
