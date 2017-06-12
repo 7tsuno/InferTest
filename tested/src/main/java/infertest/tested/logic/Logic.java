@@ -105,10 +105,14 @@ public class Logic {
 
     }
 
+    NullableSetter ns;
+
     public void test12() {
 
         Bean2 bean = new Bean2();
         bean.setCode3("aaa");
+        bean.setCode2(ns.getString());
+        bean.setCode(ns.getString());
         method(bean);
         method2(bean);
     }
@@ -116,9 +120,7 @@ public class Logic {
     private void method(Bean2 bean) {
 
         bean.getCode3().length();
-        if (bean.getCode() != null) {
-            bean.getCode().length();
-        }
+        bean.getCode().length();
 
     }
 
