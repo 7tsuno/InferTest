@@ -106,13 +106,13 @@ public class Logic {
 
     public void test12() {
 
-        Bean bean = new Bean();
+        Bean2 bean = new Bean2();
 
         method(bean);
 
     }
 
-    private void method(Bean bean) {
+    private void method(Bean2 bean) {
 
         bean.getCode().length();
         bean.getCode2().length();
