@@ -84,10 +84,16 @@ public class Logic {
 
     public void test10() {
 
-        iLogic.find("abc").getCode();
+        Bean bean = iLogic.find("abc");
 
-        other.get("aaa").getCode(); // NPE 8-1
-        
+        if (bean == null) {
+
+            iLogic.find("abc").getCode();
+
+        } else {
+
+            iLogic.find("abc").getCode();
+        }
 
     }
 
