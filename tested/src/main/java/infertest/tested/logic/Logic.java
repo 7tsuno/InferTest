@@ -109,8 +109,6 @@ public class Logic {
 
         Bean2 bean = new Bean2();
         bean.setCode3("aaa");
-        bean.setCode2(Util.getStringNullable());
-        bean.setCode(Util.getStringNullable());
         method(bean);
 
     }
