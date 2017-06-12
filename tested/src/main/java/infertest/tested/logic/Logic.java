@@ -122,6 +122,14 @@ public class Logic {
 
     }
 
+    public void test14() {
+
+        MAO mao = new MAO();
+        mao.setBean(iLogic.find("abc"));
+        a(mao);
+
+    }
+
     private void a(MAO mao) {
         mao.getBean().getCode();
     }
