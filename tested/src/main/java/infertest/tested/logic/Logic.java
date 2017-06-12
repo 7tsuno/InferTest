@@ -2,6 +2,7 @@ package infertest.tested.logic;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Random;
 
 import infertest.other.logic.OtherLogic;
 import infertest.tested.bean.Bean;
@@ -130,8 +131,8 @@ public class Logic {
     public void test14() {
 
         Bean bean = new Bean();
-        bean.setCode(dao.getOrNot("aaa"));
-        bean.setCode2(dao.getOrNot("aaa"));
+        bean.setCode(new Random().nextInt(50) > 1 ? null : new String("jge"));
+        bean.setCode2(new Random().nextInt(50) > 1 ? null : new String("jge"));
         b(bean);
         b2(bean);
 

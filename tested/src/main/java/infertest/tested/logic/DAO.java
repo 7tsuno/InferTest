@@ -15,7 +15,7 @@ public class DAO implements DAOI {
 
     private Bean extracted() {
         Random r = new Random();
-        return r.nextInt(50) > 1 ? null : new Bean();
+        return new Random().nextInt(50) > 1 ? null : new Bean();
     }
 
     public String getOrNot(String s) {
