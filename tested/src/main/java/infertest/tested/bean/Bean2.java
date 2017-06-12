@@ -1,6 +1,6 @@
 package infertest.tested.bean;
 
-public class Bean {
+public class Bean2 {
 
     private String code;
 
