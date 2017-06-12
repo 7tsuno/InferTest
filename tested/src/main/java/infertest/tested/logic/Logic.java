@@ -107,13 +107,14 @@ public class Logic {
     public void test12() {
 
         Bean2 bean = new Bean2();
-
+        bean.setCode3("aaa");
         method(bean);
 
     }
 
     private void method(Bean2 bean) {
 
+        bean.getCode3().length();
         bean.getCode().length();
         bean.getCode2().length();
 
