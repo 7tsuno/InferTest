@@ -111,8 +111,6 @@ public class Logic {
         bean.setCode2(Util.getStringNullable());
         bean.setCode3("abc");
 
-        bean.getCode().length();
-
         method(bean);
 
     }
