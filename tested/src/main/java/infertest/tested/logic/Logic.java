@@ -131,12 +131,18 @@ public class Logic {
 
         Bean bean = new Bean();
         bean.setCode(dao.getOrNot("aaa"));
+        bean.setCode2(dao.getOrNot("aaa"));
         b(bean);
+        b2(bean);
 
     }
 
     private void b(Bean bean) {
         bean.getCode().length();
+    }
+
+    private void b2(Bean bean) {
+        bean.getCode2().length();
     }
 
     private void a(MAO mao) {
