@@ -105,43 +105,7 @@ public class Logic {
 
     }
 
-    NullableSetter ns;
-
     public void test12() {
-
-        Bean2 bean = new Bean2();
-        bean.setCode3("aaa");
-        bean.setCode2(ns.getString("a"));
-        bean.setCode(ns.getString("b"));
-
-        bean.getCode().length();
-        bean.getCode2().length();
-
-        String a = ns.getString("c");
-        a.length();
-
-        String b = ns.getString("d");
-        b.length();
-
-        method(bean);
-        method2(bean);
-    }
-
-    private void method(Bean2 bean) {
-
-        bean.getCode3().length();
-        bean.getCode().length();
-
-    }
-
-    private void method2(Bean2 bean) {
-
-        bean.getCode3().length();
-        bean.getCode2().length();
-
-    }
-
-    public void test13() {
 
         OtherLogic lo = new OtherLogic();
         lo.returnLength(null);
