@@ -12,6 +12,8 @@ public class Logic {
 
     private OtherLogic2 other;
 
+    private DAO dao;
+
     public void test1() {
         Bean bean = new Bean();
         bean.getCode().length(); // NPE 1
@@ -115,7 +117,7 @@ public class Logic {
     public void test13() {
 
         MAO mao = new MAO();
-        mao.setBean(iLogic.find("abc"));
+        mao.setBean(dao.getBeanOrNot("aaa"));
         mao.getBean().getCode();
 
     }
