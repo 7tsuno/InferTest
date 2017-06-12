@@ -116,7 +116,13 @@ public class Logic {
 
         bean.getCode().length();
         bean.getCode2().length();
-        
+
+        String a = ns.getString();
+        a.length();
+
+        String b = ns.getString();
+        b.length();
+
         method(bean);
         method2(bean);
     }
