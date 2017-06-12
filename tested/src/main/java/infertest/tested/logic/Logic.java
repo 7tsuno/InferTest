@@ -124,10 +124,14 @@ public class Logic {
 
     public void test14() {
 
-        MAO mao = new MAO();
-        mao.setBean(iLogic.find("abc"));
-        a(mao);
+        Bean bean = new Bean();
+        bean.setCode(dao.getOrNot("aaa"));
+        b(bean);
 
+    }
+
+    private void b(Bean bean) {
+        bean.getCode().length();
     }
 
     private void a(MAO mao) {
