@@ -104,4 +104,24 @@ public class Logic {
 
     }
 
+    public void test12() {
+
+        Bean bean = new Bean();
+        bean.setCode(Util.getStringNullable());
+        bean.setCode2(Util.getStringNullable());
+        bean.setCode3("abc");
+
+        method(bean);
+
+    }
+
+    private void method(Bean bean) {
+
+        bean.getCode3().length();
+
+        bean.getCode().length();
+        bean.getCode2().length();
+
+    }
+
 }
