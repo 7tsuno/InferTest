@@ -53,6 +53,10 @@ public class Logic {
 
         other.method(1, null); // NPE 7-2
     }
+    
+    public static void main(String[] args) {
+        new Logic().test8();
+    }
 
     public void test8() {
 
