@@ -85,11 +85,9 @@ public class Logic {
     public void test10() {
 
         iLogic.find("abc").getCode();
-        iLogic.find("abc").getCode();
-        iLogic.find("abc").getCode();
-        iLogic.find("abc").getCode();
-        iLogic.find("abc").getCode();
-        iLogic.find("abc").getCode();
+
+        other.get("aaa").getCode(); // NPE 8-1
+        
 
     }
 
