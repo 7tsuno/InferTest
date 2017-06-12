@@ -2,6 +2,8 @@ package infertest.tested.logic;
 
 import java.util.Random;
 
+import infertest.tested.bean.Bean;
+
 public class OtherLogic2 {
 
     public int getLength(String str) {
@@ -15,11 +17,12 @@ public class OtherLogic2 {
         }
     }
 
-    public void method2(String str) {
+    public Bean get(String str) {
 
         if (new Random().nextInt(5) > 1) {
-            str.length();
+            return null;
         }
+        return new Bean();
     }
 
 }
