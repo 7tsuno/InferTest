@@ -6,6 +6,7 @@ import java.util.List;
 import infertest.other.logic.OtherLogic;
 import infertest.tested.bean.Bean;
 import infertest.tested.bean.Bean2;
+import infertest.tested.bean.MAO;
 
 public class Logic {
 
@@ -109,5 +110,13 @@ public class Logic {
 
         OtherLogic lo = new OtherLogic();
         lo.returnLength(null);
+    }
+
+    public void test13() {
+
+        MAO mao = new MAO();
+        mao.setBean(iLogic.find("abc"));
+        mao.getBean().getCode();
+
     }
 }
