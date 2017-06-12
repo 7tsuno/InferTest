@@ -115,8 +115,6 @@ public class Logic {
 
     private void method(Bean bean) {
 
-        bean.getCode3().length();
-
         bean.getCode().length();
         bean.getCode2().length();
 
